@@ -6,8 +6,8 @@ permalink:           pretty
 
 # Setup
 title:               Data-Sung
-tagline:             '태그'
-description:         '소개'
+tagline:             '데이터 분석가'
+description:         'To be Data scientist'
 url:                 https://sung-mi.github.io
 baseurl:             ''
 paginate:            5

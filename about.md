@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About
+title: My name is Sung-mi 
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  I'm very interested in data analysis.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+글쓰는 중[@mdo](https://twitter.com/mdo).
 
 There are currently two themes built on Poole:
 
