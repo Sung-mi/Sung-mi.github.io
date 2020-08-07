@@ -16,7 +16,7 @@ tag: Algorithm
 
 - 3 X 3 magic square 만들기: 각 열과 행 그리고 대각 원소의 합이 항상 15가 되는 matrix
 - input 3 X 3 matrix가 1부터 9까지 수가 한 번씩만 들어가도록  3 X 3 magic square 바꾸기
-- 단, a->b 원소를 바꿀때 |a-b|의 값이 가장 작게 되도록 3 X 3 magic square 만들기
+- a->b 원소를 바꿀때 |a-b|의 값이 가장 작게 되도록 3 X 3 magic square 만들기
 
 Solution
 ===
