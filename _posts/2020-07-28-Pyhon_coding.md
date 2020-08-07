@@ -6,7 +6,7 @@ categories: Python
 tag: Algorithm
 ---
 
-`#Data-ssung #coding # Algorithm`
+`#Data-ssung #code # Algorithm`
 
 목적 : Magic Square 완성하기 
 ---
