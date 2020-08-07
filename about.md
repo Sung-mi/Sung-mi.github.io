@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My name is Sung-mi 
+title: About Data-ssung
 ---
 
 <p class="message">
