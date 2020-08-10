@@ -2,8 +2,8 @@
 layout: post
 title:  "머신러닝(Machine Learning)과 딥러닝(Deep Learning)"
 date:   2020-07-14 15:50:46 +0900
-categories: Machine Learning
-tag: Machine Learning
+categories: Machine_Learning
+tag: Machine_Learning
 ---
 
 `#Data-ssung #Machine Learning #Deep Learning`
