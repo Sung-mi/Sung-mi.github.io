@@ -5,10 +5,9 @@ title: About
 
 <p class="message">
 
-## Data-ssung
-
-
 </p>
+
+## Data-ssung
 
 ### 소개 
 - 베이지안 통계학 전공
