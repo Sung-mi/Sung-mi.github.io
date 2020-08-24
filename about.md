@@ -4,12 +4,13 @@ title: About
 ---
 
 <p class="message">
-  Data-ssung
-  ==
+Data-ssung
+--
 
 
 </p>
-###소개 
+
+### 소개 
 - 베이지안 통계학 전공
 - 비즈니스 데이터 분석가
 - Github: [Data-ssung](https://github.com/Data-ssung)
