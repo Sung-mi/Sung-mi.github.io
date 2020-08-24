@@ -1,30 +1,29 @@
 ---
 layout: page
-title: About Data-ssung
+title: About
 ---
 
 <p class="message">
-  I'm very interested in data analysis.
+  Data-ssung
+  ==
+
+
 </p>
+###소개 
+- 베이지안 통계학 전공
+- 비즈니스 데이터 분석가
+- Github: [Data-ssung](https://github.com/Data-ssung)
+- blog: [Github-blog](https://data-ssung.github.io/), [tistory-blog](https://data-ssung.tistory.com/1?category=798563)
 
-글쓰는 중[@mdo](https://twitter.com/mdo).
 
-There are currently two themes built on Poole:
+### 관심사
+- 데이터 분석
+- Python
+- 기계학습
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+### 목표
+- AI를 활용해서 마케팅하기
+- 현실의 다양한 문제를 기계학습과 통계로 해결해보기
 
 Thanks for reading!
