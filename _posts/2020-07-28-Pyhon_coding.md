@@ -1,96 +1,45 @@
 ---
 layout: post
-title:  "Python HackerRank : Forming a Magic Square"
-date:   2020-07-04 15:50:46 +0900
-categories: Python
-tag: Algorithm
+title:  "코로나 바이러스(COVID-19)로 조건부확률 이해하기"
+date:   2020-10-14 15:50:46 +0900
+categories: Bayesian_statistics
+tag: Bayesian_statistics
 ---
 
-`#Data-ssung #code # Algorithm`
+`#Data-sung #Bayesian statistics`
+#### 이 글은 위니버스님의 [전 국민을 코로나 진단키트로 검사하지 않는 수학적 이유 | 조건부확률][H] 동영상을 참고하여 정리하는 자료입니다.  
 
-목적 : Magic Square 완성하기 
+주제: 전 국민을 코로나 진단키트로 검사하지 않는 수학적 이유
 ---
 
-문제
-===
+### 전염병 확산을 방지
+전염병이 인류를 위협할 때, 진단 키트 활용해서 발병 유무를 확인할 수 있음
 
-- 3 X 3 magic square 만들기: 각 열과 행 그리고 대각 원소의 합이 항상 15가 되는 matrix
-- input 3 X 3 matrix가 1부터 9까지 수가 한 번씩만 들어가도록  3 X 3 magic square 바꾸기
-- a->b 원소를 바꿀때 a-b의 절대치 값이 가장 작게 되도록 3 X 3 magic square 만들기
+### 전염병 진단 키트의 성능은?
+불행하게도 100% 완벽한 진단 키트를 만들어내기는 어려움
+- 의문1. 진단 키트의 검사 결과를 얼만큼 신뢰해야할까?
+- 의문2. 전 국민(전수조사)를 대상으로 진단 검사를 하면 전염병 확산 방지에 도움이 될까?
 
-Solution
-===
-- 3x3 매직스퀘어 모든 열과 행, 대각 행렬의 합이 15가 되는 경우의 수 8가지 입력 (직접해도 되고, 코딩해도 되고)
-- input의 값을 8가지 경우와 차이를 구해서 가장 작은 값을 return
+## **의문1. 진단 키드의 검사 결과를 얼만큼 신뢰해야할까?**
+### 양성과 음성의 의미를 정확하게 이해하기
+- 인간은 상황을 매우 단순하게 보는 경향이 있음
+- 감염된 사람/감염되지 않은 사람 이렇게 두종류로 나뉠 거라고 생각함
+<center>양성(Positive) vs 음성(negative)</center>
+<center>병에 감염 X vs 병에 감염 O</center>
+- 정확한 바이러스 여부는 현미경으로 직접 바이러스를 확인해야지 알 수 있음
+- 이 방법은 정확도는 높지만 시간이 너무 오래걸림 (현실에서 사용하기에는 효율성이 떨어짐)
 
-code
-===
-```Python
-# version 1: magic square 경우의 수를 직접 입력하기 
-def formingMagicSquare(s):
+#### 따라서 진단 키트를 활용해서 병의 유무를 판담함
+- 장점: 쉽고 빠르게 검사 가능(효율적)
+- 단점: 기본적으로 불확실성을 가짐
 
-    # magic square 경우의 수
-    possibilities = [[8,1,6,3,5,7,4,9,2],
-               [6,1,8,7,5,3,2,9,4],
-               [4,9,2,3,5,7,8,1,6],
-               [2,9,4,7,5,3,6,1,8],
-               [8,3,4,1,5,9,6,7,2],
-               [4,3,8,9,5,1,2,7,6],
-               [6,7,2,1,5,9,8,3,4],
-               [2,7,6,9,5,1,4,3,8]]
-    
-    # input 리스트 만들기
-    temp = []
-    for i in range(len(s)):
-        temp += s[i]
-        
-    # magic square 경우의 수와 input 리스트 비교
-    com_min = sum(range(10))
-
-    for p in possibilities:
-        com = 0
-        for i in range(len(temp)):
-            com += abs(temp[i]-p[i])
-
-        if com < com_min:
-            com_min = com
-    
-    return com_min
-```
-
-```Python
-# version2: magic square 직접 코딩 해보기
-def formingMagicSquare(s):
-    
-    #  magic square 경우의 수 
-    possibilities = []
-    for a in range(1, 10):
-        for b in range(1, 10):
-            if set([a, 15-a-b, b, 5+b-a, 5, 5+a-b, 10-b, a+b-5, 10-a]) == set(range(1, 10)):
-                possibilities.append([a, 15-a-b, b,
-                                      5+b-a, 5, 5+a-b,
-                                      10-b, a+b-5, 10-a])
-
-    # input 리스트 만들기
-    temp = []
-    for i in range(len(s)):
-        temp += s[i]
-
-    # magic square 경우의 수와 input 리스트 비교
-    com_min = sum(range(10))
-
-    for p in possibilities:
-        com = 0
-        for i in range(len(temp)):
-            com += abs(temp[i]-p[i])
-
-        if com < com_min:
-            com_min = com
-    
-    return com_min
-```
+### 2. 진단키트 원리 이해하기
+- 감염 유무(Infected vs Not infected) 검사를 하면 4가지 상황이 생김
+![](https://raw.githubusercontent.com/Data-ssung/Data-ssung.github.io/master/img/진단키트.PNG)
 
 
-#### 문제는 [해커랭크][H]를 참고하였습니다.
 
-[H]: https://www.hackerrank.com/challenges/magic-square-forming/problem
+
+
+
+[H]: https://www.youtube.com/watch?v=RCf4KZa9IfQ  
